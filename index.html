@@ -10,7 +10,7 @@
   <div id="graph"></div>
 
   <script>
-    fetch('./test1.json').then(res => res.json()).then(data => {
+    fetch('https://raw.githubusercontent.com/catethos/got/master/test1.json').then(res => res.json()).then(data => {
       const Graph = ForceGraph()
       (document.getElementById('graph'))
         .graphData(data)
